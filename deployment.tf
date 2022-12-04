@@ -48,10 +48,4 @@ resource "azurerm_linux_web_app" "Webapp" {
     }
 
 
-resource "azurerm_app_service_source_control" "source_control" {
-  app_id = azurerm_linux_web_app.Webapp.id
-  repo_url = "https://github.com/Sanketpatil-dev/group-proj"
-  branch = "master" 
-  
-  
-}
+
